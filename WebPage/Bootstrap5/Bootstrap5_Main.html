@@ -292,23 +292,6 @@
 
     <script>
 
-        /*const homeElement = document.getElementById('Home1');
-        const themeContainer = document.getElementById('Themebox');
-
-        function updateThemeContainerVisibility() {
-            const homeRect = homeElement.getBoundingClientRect();
-            const themeRect = themeContainer.getBoundingClientRect();
-
-            if (themeRect.bottom > homeRect.top && themeRect.top < homeRect.bottom) {
-                themeContainer.classList.remove('TheTcs-hide');
-                themeContainer.classList.add('Theme-color-hide');
-            } else {
-                themeContainer.classList.remove('Theme-color-hide');
-                themeContainer.classList.add('TheTcs-hide');
-            }
-        }
-        window.addEventListener('scroll', updateThemeContainerVisibility);*/
-
         const homeElement = document.getElementById('Home1');
         const themeContainer = document.getElementById('Themebox');
         const observer = new IntersectionObserver(entries => {
@@ -324,8 +307,6 @@
             });
                 }, { threshold: 0 });
             observer.observe(homeElement);
-
-
 
         function toggleDarkMode() {
             var body = document.getElementsByTagName("body")[0];
